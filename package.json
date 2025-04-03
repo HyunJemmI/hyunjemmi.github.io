@@ -1,5 +1,5 @@
 {
-  "homepage": "https:hyunjemmi.github.io",
+  "homepage": "https://hyunjemmi.github.io",
   "name": "developerfolio",
   "version": "0.1.0",
   "private": true,
@@ -21,7 +21,7 @@
     "sass": "^1.32.8"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo 'jemdori.info' > build/CNAME",
     "deploy": "gh-pages -b master -d build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
