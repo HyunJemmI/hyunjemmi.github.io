@@ -7,6 +7,16 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 
 // Splash Screen
 
+export const seo = {
+  title: "HyunJe Lee", // 원하는 제목으로 변경
+  description: "Welcome to my portfolio website.", // 원하는 설명 추가
+  og: {
+    title: "HyunJe Lee",
+    type: "website",
+    url: "https://hyunjelee.info"
+  }
+};
+
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
@@ -20,10 +30,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Hyunje Lee",
+  title: "Hi, I'm Hyunje Lee",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A software engineer who loves to create something new and solve problems."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -33,13 +43,14 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/HyunJemmI",
+  linkedin:
+    "https://www.linkedin.com/in/%ED%98%84%EC%A0%9C-%EC%9D%B4-2875a8355/",
+  gmail: "dlguswp010731@gmail.com",
+  //gitlab: "https://gitlab.com/saadpasta",
+  //facebook: "https://www.facebook.com/saad.pasta7",
+  //medium: "https://medium.com/@saadpasta",
+  //stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +60,13 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle:
+    "Front-End Developer, Computer Vision and Machine Learning Enthusiast",
   skills: [
+    emoji("⚡ Develop User Interfaces for your web and mobile applications"),
+    emoji("⚡ Creatively solving visual perception problems using AI"),
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Continuously refine my skills through competitions and team projects."
     )
   ],
 
@@ -72,10 +82,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
+    // {
+    //   skillName: "sass",
+    //   fontAwesomeClassname: "fab fa-sass"
+    // },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
@@ -88,26 +98,26 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
+    // {
+    //   skillName: "c++",
+    //   fontAwesomeClassname: "fab fa-c"
+    // },
+    // {
+    //   skillName: "npm",
+    //   fontAwesomeClassname: "fab fa-npm"
+    // },
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
     },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
+    // {
+    //   skillName: "aws",
+    //   fontAwesomeClassname: "fab fa-aws"
+    // },
+    // {
+    //   skillName: "firebase",
+    //   fontAwesomeClassname: "fas fa-fire"
+    // },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
@@ -115,6 +125,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "C++",
+      fontAwesomeClassname: "fab fa-c"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +140,15 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of Seoul",
+      logo: require("./assets/images/UOS.png"),
+      subHeader: "Senior in Computer Science",
+      duration: "March 2020 - Present",
+      desc: "Expected Graduation: February 2026",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Total GPA of 3.58/4.5, Major GPA of 3.40/4.5",
+        "Relevant Coursework: 임베디드 시스템, 선형대수, 인공지능, 컴퓨터 네트워크"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -154,15 +160,15 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "70%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "Machine Learning",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Computer Vision",
       progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -171,7 +177,7 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: false, //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Software Engineer",
@@ -212,29 +218,32 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Ongoing Projects",
+  subtitle: "Projects that I am currently working on",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      // image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName:
+        "Improving Vision Processing in Autonomous Driving Using Contrastive Learning",
+      projectDesc:
+        "This project aims to enhance the performance of vision processing in autonomous driving systems by leveraging contrastive learning techniques. By utilizing a large dataset of images and videos, we aim to improve the accuracy and robustness of object detection and recognition algorithms.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://hyunjem.notion.site/Contrastive-Learning-1c4346dcfeb680f7a983f5f5fee0bc6b?pvs=4"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      // image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Autonomous Turret",
+      projectDesc:
+        "This project aims to develop an autonomous turret system that can accurately track and target moving objects using computer vision and machine learning techniques. The turret will be equipped with a camera and a servo motor to enable precise aiming and shooting.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://hyunjem.notion.site/autonomuos-turret?pvs=4"
         }
       ]
     }
@@ -247,55 +256,55 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  subtitle: "Achievements, Certifications, Award Letters that I have done !",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "SRC/IRC Creative Robot Contest",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+        "As part of our project, we designed and built WallCL, a bipedal climbing robot capable of adhering to vertical surfaces using electromagnets.",
+      image: require("./assets/images/stc.JPG"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Award",
+          url: "https://hyunjem.notion.site/src-irc-award?pvs=4"
         },
         {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "Activate Video",
+          url: "https://hyunjem.notion.site/src-irc-video?pvs=4"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "22th Embedded Software Contest (Autonomous Driving)",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Developed a sensor fusion system using stereo cameras and LiDAR, and implemented a reinforcement learning-based driving algorithm for autonomous navigation.",
+      image: require("./assets/images/esww.png"),
+      imageAlt: "Team logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Award",
+          url: "https://hyunjem.notion.site/esw-ad-award?pvs=4"
+        },
+        {
+          name: "Activate Video",
+          url: "https://hyunjem.notion.site/esw-ad-video?pvs=4"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      title: "15th Creative Contest for Helping Underprivileged Neighbors",
+      subtitle:
+        "Developed a multimodal model for child care by combining audio classification and facial recognition using OpenCV.",
       image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      imageAlt: "Team Logo",
       footerLink: [
         {name: "Certification", url: ""},
         {
           name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          url: "https://hyunjem.notion.site/esw-ad-video?pvs=4"
         }
       ]
     }
@@ -307,21 +316,26 @@ const achievementSection = {
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  subtitle: "I love to write about my experiences and share knowledge",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://hyunjem.notion.site/thesis",
+      title: "Thesis",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        " I am summarizing several research papers that caught my interest and exploring my areas of focus."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://hyunjem.notion.site/contest-review?pvs=73",
+      title: "Contest Review",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "I have documented the competitions I previously participated in, along with the lessons I learned and my reflections on those experiences."
+    },
+    {
+      url: "https://hyunjem.notion.site/project?pvs=73",
+      title: "Project",
+      description:
+        "I am covering personal projects or seminars where I have taught students outside of competitions."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -343,7 +357,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +370,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -370,17 +384,16 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  subtitle: "I am open to discussing new projects and opportunities.",
+  number: "+82-1046035918",
+  email_address: "dlguswp010731@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
