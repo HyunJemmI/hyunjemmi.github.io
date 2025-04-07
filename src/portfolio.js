@@ -246,6 +246,18 @@ const bigProjects = {
           url: "https://hyunjem.notion.site/autonomuos-turret?pvs=4"
         }
       ]
+    },
+    {
+      // image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Gyro-Drop",
+      projectDesc:
+        "The game uses the phone’s gyroscope to control a paddle by tilting the device, which in turn moves the ball. In multiplayer mode, each player is assigned control over one axis.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://hyunjem.notion.site/gyro-drop?pvs=4"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -260,23 +272,6 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "SRC/IRC Creative Robot Contest",
-      subtitle:
-        "As part of our project, we designed and built WallCL, a bipedal climbing robot capable of adhering to vertical surfaces using electromagnets.",
-      image: require("./assets/images/stc.JPG"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Award",
-          url: "https://hyunjem.notion.site/src-irc-award?pvs=4"
-        },
-        {
-          name: "Activate Video",
-          url: "https://hyunjem.notion.site/src-irc-video?pvs=4"
-        }
-      ]
-    },
-    {
       title: "22th Embedded Software Contest (Autonomous Driving)",
       subtitle:
         "Developed a sensor fusion system using stereo cameras and LiDAR, and implemented a reinforcement learning-based driving algorithm for autonomous navigation.",
@@ -290,6 +285,10 @@ const achievementSection = {
         {
           name: "Activate Video",
           url: "https://hyunjem.notion.site/esw-ad-video?pvs=4"
+        },
+        {
+          name: "Contest Review",
+          url: "https://hyunjem.notion.site/2024-14a346dcfeb68097a193c1810059cd92?pvs=4"
         }
       ]
     },
@@ -298,17 +297,43 @@ const achievementSection = {
       title: "15th Creative Contest for Helping Underprivileged Neighbors",
       subtitle:
         "Developed a multimodal model for child care by combining audio classification and facial recognition using OpenCV.",
-      image: require("./assets/images/pwaLogo.webp"),
+      image: require("./assets/images/team.jpeg"),
       imageAlt: "Team Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://hyunjem.notion.site/esw-ad-video?pvs=4"
+          name: "Award",
+          url: "https://hyunjem.notion.site/15-cc-award?pvs=4"
+        },
+        {
+          name: "Contest Review",
+          url: "https://hyunjem.notion.site/2023-14a346dcfeb680bfbd92fc0bfa9948ee?pvs=4"
+        }
+      ]
+    },
+
+    {
+      title: "SRC/IRC Creative Robot Contest",
+      subtitle:
+        "As part of our project, we designed and built WallCL, a bipedal climbing robot capable of adhering to vertical surfaces using electromagnets.",
+      image: require("./assets/images/stc.JPG"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Award",
+          url: "https://hyunjem.notion.site/src-irc-award?pvs=4"
+        },
+        {
+          name: "Activate Video",
+          url: "https://hyunjem.notion.site/src-irc-video?pvs=4"
+        },
+        {
+          name: "Contest Review",
+          url: "https://hyunjem.notion.site/2020-SRC-IRC-14a346dcfeb6804db11ce0bc5f771368?pvs=4"
         }
       ]
     }
   ],
+
   display: true // Set false to hide this section, defaults to true
 };
 
